@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.NewEvent">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/bgHeader"
+        android:layout_width="398dp"
+        android:layout_height="85dp"
+        android:elevation="5dp"
+        android:theme="@style/ToolbarTheme" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bgHeader"
+        android:layout_margin="20dp">
+
+        <RelativeLayout
+            android:id="@+id/rlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="50dp">
+
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:padding="0dp"
+                        android:src="@drawable/img_camera" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_marginTop="30dp"
+                        android:text="Event Description"
+                        android:textColor="#642fb4ff"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/txtdesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:inputType="textEmailAddress" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Type"
+                        android:textColor="#642fb4ff"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/txttype"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:entries="@array/eventTypes"
+                        android:inputType="text"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Location"
+                        android:textColor="#642fb4ff"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/txtLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:entries="@array/locations"
+                        android:inputType="text" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Date"
+                        android:textColor="#642fb4ff"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="90dp"
+                            android:text="Date"
+                            android:textSize="16sp"
+                            android:layout_height="60dp"
+                            android:id="@+id/DateP"/>
+
+                        <TextView
+                            android:id="@+id/txtdate"
+                            android:textSize="13sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:inputType="date|datetime" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="contact Number"
+                        android:inputType="number"
+                        android:textColor="#642fb4ff"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/txtContact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:inputType="textPhonetic" />
+
+                    <EditText
+                        android:id="@+id/txtemail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:hint="example@example"
+                        android:inputType="textEmailAddress" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cv"
+                android:layout_alignLeft="@+id/cv"
+                android:layout_alignRight="@+id/cv"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="-30dp"
+                android:layout_marginRight="35dp"
+                android:elevation="10dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_ui"
+                    android:text="Add Event"
+                    android:id="@+id/btnsave"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

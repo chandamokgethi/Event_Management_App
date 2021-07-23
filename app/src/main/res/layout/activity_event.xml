@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="@drawable/mybackground"
+    android:orientation="vertical"
+    tools:context=".activities.EventActivity">
+
+
+
+<TextView
+    android:fontFamily="@font/mr"
+    android:id="@+id/masterEventName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="24dp"
+    android:textAlignment="center"
+    android:text="Available Events"
+    android:textColor="#1D1C1F"
+    android:textSize="24sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:layout_marginTop="24dp"
+        android:id="@+id/mastereventimage"
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+        android:src="@drawable/img_bicycle" />
+
+    <TextView
+        android:id="@+id/eventdesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/ml"
+        android:text="Around Ub statium"
+        android:textColor="#1D1C1F"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/masterEventName" />
+
+<TextView
+    android:id="@+id/mastereventtype"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="24dp"
+    android:layout_marginTop="52dp"
+    android:fontFamily="@font/mm"
+    android:text="Bicycle race"
+    android:textColor="#1D1C1F"
+    android:textSize="18sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<LinearLayout
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="16dp"
+    android:orientation="vertical"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/mastereventtype">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/masteremail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mr"
+            android:textAlignment="center"
+            android:text="chandamokgethi12@gmail.com"
+            android:textColor="#1D1C1F
+"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/ml"
+            android:id="@+id/masterdate"
+            android:textAlignment="center"
+            android:text="Feb 22, 2018"
+            android:textColor="#1D1C1F"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/ml"
+            android:id="@+id/mastercontact"
+            android:text="+267 74 014 928"
+            android:textColor="#1D1C1F"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/eventbadge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/badgegreen"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/masterbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mm"
+            android:text="Call"
+            android:textColor="#1ABC9C"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/mastersendMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mm"
+            android:text="Send Mail"
+            android:textColor="#1ABC9C"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorPurple">#983CFF</color>
+    <color name="colorPurpleT">#64983cff</color>
+    <color name="colorBlue">#3B3B3C</color>
+    <color name="colorBlueT">#642fb4ff</color>
+    <color name="grey_hard">#96989A</color>
+    <color name="grey_medium">#BDBFC1</color>
+    <color name="grey_soft">#F5F5F5</color>
+
+    <color name="grey_bg">#E6E6E6</color>
+    <color name="grey_text">#222D31</color>
+    <color name="tab_indicator_color">#FFFFFF</color>
+    <color name="me_chat_bg">#FFE0B2</color>
+    <color name="colorPrimaryLight">#03277A</color>
+
+    <color name="darkOverlay">#80000000</color>
+    <color name="darkOverlaySoft">#40000000</color>
+    <color name="whiteOverlay">#40FFFFFF</color>
+</resources>

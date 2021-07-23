@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/mybackground"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <ImageView
+        android:id="@+id/circle1"
+        android:layout_width="134dp"
+        android:layout_height="134dp"
+        android:layout_below="@+id/bgHeader"
+        android:layout_marginLeft="-25dp"
+        android:layout_marginTop="-5dp"
+         />
+
+    <ImageView
+        android:id="@+id/circle3"
+        android:layout_width="182dp"
+        android:layout_height="182dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-80dp"
+        android:layout_marginBottom="-30dp"
+         />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bgHeader"
+        android:layout_margin="20dp">
+
+        <RelativeLayout
+            android:id="@+id/rlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="50dp">
+
+                    <ImageView
+                        android:id="@+id/updateimg"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:padding="0dp"
+                        android:src="@drawable/img_camera" />
+
+                    <TextView
+                        android:layout_marginTop="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Event Description"
+                        android:textColor="@color/colorBlueT"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/updatedesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:inputType="textEmailAddress" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Type"
+                        android:textColor="@color/colorBlueT"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/updatetype"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:inputType="text"
+                        android:entries="@array/eventTypes"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Location"
+                        android:textColor="@color/colorBlueT"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/updateLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:entries="@array/locations"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:inputType="text" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Date"
+                        android:textColor="@color/colorBlueT"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/updatedate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:inputType="date|datetime" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="contact Number"
+                        android:textColor="@color/colorBlueT"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/updateContact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:inputType="textPassword" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cv"
+                android:layout_alignLeft="@+id/cv"
+                android:layout_alignRight="@+id/cv"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="-30dp"
+                android:layout_marginRight="35dp"
+                android:elevation="10dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_ui"
+                    android:text="Update Event"
+                    android:id="@+id/btnupdate"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

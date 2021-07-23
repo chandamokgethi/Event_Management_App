@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentPadding="1dp"
+    app:cardBackgroundColor="#E0F2F1"
+    android:layout_marginLeft="2dp"
+    app:cardCornerRadius="5dp"
+    android:layout_marginRight="2dp"
+    app:cardUseCompatPadding="true"
+    android:elevation="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#A8C587">
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp">
+            <ImageView
+                android:padding="20dp"
+                android:layout_width="120dp"
+                android:id="@+id/event_img"
+                android:src="@mipmap/ic_launcher"
+                android:layout_height="120dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginStart="5dp"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="17dp"
+                android:layout_height="match_parent">
+
+                <TableRow>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Event Type"
+                        android:textStyle="bold"
+                        android:textColor="#212121"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/event_type"
+                        android:fontFamily="monospace"
+                        android:textSize="16sp"/>
+
+                </TableRow>
+
+                <TableRow>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Event Location"
+                        android:textStyle="bold"
+                        android:textColor="#212121"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/event_location"
+                        android:fontFamily="monospace"
+                        android:textSize="16sp"/>
+
+                </TableRow>
+
+
+
+
+                <TableRow>
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Competition"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#212121"
+                        android:textStyle="bold"
+                        android:id="@+id/event_desc"
+                        android:fontFamily="monospace"
+                        android:textSize="15sp"/>
+
+                </TableRow>
+
+
+
+                <TableRow>
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="2019"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#212121"
+                        android:id="@+id/event_date"
+                        android:fontFamily="monospace"
+                        android:textSize="17sp"/>
+
+                </TableRow>
+            </TableLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

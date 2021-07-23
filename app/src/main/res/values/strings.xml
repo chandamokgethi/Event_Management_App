@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">PedalPals</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string-array name="eventTypes">
+        <item>Cyclers party</item>
+        <item>5km cycle race</item>
+        <item>1000 km bike race</item>
+    </string-array>
+
+    <string-array name="locations">
+        <item>Serowe</item>
+        <item>Palapye</item>
+        <item>Gaborone</item>
+        <item>Francistown</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="send_message">SEND MESSAGE</string>
+</resources>
